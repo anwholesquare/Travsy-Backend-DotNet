@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Travsy-Backend-DotNet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c482acb7f388aa875d6746523d3c1822f7a4e11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c51b54a663c489a53a2d0422c1e8453ce1c389b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Travsy-Backend-DotNet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Travsy-Backend-DotNet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DyOI+a48048qxkLS9AOwpGTv7Ho1KRHfwkZdvTEIscE+QkdCOnbn/aR76LmBCCoh2u8QnWvwZb4Mad1aMnpHfg==",
+  "dgSpecHash": "IIh/76/kLT0=",
   "success": true,
-  "projectFilePath": "D:\\TravsyAi\\Travsy-Backend-DotNet\\Travsy-Backend-DotNet.csproj",
+  "projectFilePath": "/Users/anan/Documents/Projects/TravsyAI/backend/Travsy-Backend-DotNet/Travsy-Backend-DotNet.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
