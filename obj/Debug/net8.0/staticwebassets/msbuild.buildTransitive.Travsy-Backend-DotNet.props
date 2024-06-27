@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/Travsy-Backend-DotNet.props" />
+</Project>
