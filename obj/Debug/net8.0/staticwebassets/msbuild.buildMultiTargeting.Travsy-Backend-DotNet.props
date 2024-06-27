@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../build/Travsy-Backend-DotNet.props" />
+  <Import Project="..\build\Travsy-Backend-DotNet.props" />
 </Project>

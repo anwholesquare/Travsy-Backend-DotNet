@@ -1,27 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/anan/Documents/Projects/TravsyAI/backend/Travsy-Backend-DotNet/Travsy-Backend-DotNet.csproj": {}
+    "D:\\TravsyAi\\Travsy-Backend-DotNet\\Travsy-Backend-DotNet.csproj": {}
   },
   "projects": {
-    "/Users/anan/Documents/Projects/TravsyAI/backend/Travsy-Backend-DotNet/Travsy-Backend-DotNet.csproj": {
+    "D:\\TravsyAi\\Travsy-Backend-DotNet\\Travsy-Backend-DotNet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/anan/Documents/Projects/TravsyAI/backend/Travsy-Backend-DotNet/Travsy-Backend-DotNet.csproj",
+        "projectUniqueName": "D:\\TravsyAi\\Travsy-Backend-DotNet\\Travsy-Backend-DotNet.csproj",
         "projectName": "Travsy-Backend-DotNet",
-        "projectPath": "/Users/anan/Documents/Projects/TravsyAI/backend/Travsy-Backend-DotNet/Travsy-Backend-DotNet.csproj",
-        "packagesPath": "/Users/anan/.nuget/packages/",
-        "outputPath": "/Users/anan/Documents/Projects/TravsyAI/backend/Travsy-Backend-DotNet/obj/",
+        "projectPath": "D:\\TravsyAi\\Travsy-Backend-DotNet\\Travsy-Backend-DotNet.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\TravsyAi\\Travsy-Backend-DotNet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/anan/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "net8.0": {
@@ -62,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
