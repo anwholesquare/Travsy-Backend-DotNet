@@ -1,32 +1,62 @@
-using System.Diagnostics;
+
+using System.Reflection.Metadata;
 using Microsoft.AspNetCore.Mvc;
-using Travsy_Backend_DotNet.Models;
+using MySql.Data.MySqlClient;
+
 
 namespace Travsy_Backend_DotNet.Controllers;
 
+
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+
+  public String Index()
+  {
+    try
     {
-        _logger = logger;
+      List<string> users = new List<string>();
+
+      using (var connection = new MySqlConnection(Constants.db))
+      {
+        connection.Open();
+        var command = new MySqlCommand("SELECT * FROM admin", connection);
+
+        // Execute the command
+        using (var reader = command.ExecuteReader())
+        {
+          while (reader.Read())
+          {
+            // Process each result
+            users.Add(reader["user"].ToString() ?? "");
+          }
+        }
+      }
+      var response = new Dictionary<string, List<string>>
+      {
+        { "admins", users }
+      };
+
+      return System.Text.Json.JsonSerializer.Serialize(response);
     }
-
-    public String Index()
+    catch (Exception ex)
     {
-        return "{\"name\": \"Travsy AI!\"}";
+      // Handle the exception
+      // You can log the exception or return an error message
+      return "An error occurred: " + ex.Message;
     }
+  }
 
 
-    public String Public()
-    {
-        return "{\"name\": \"Travsy AI!\"}";
-    }
+  [HttpPost]
+  public String Public(int id, string name)
+  {
+    return "{\"name\": \"" + name + "\", \"version\": " + id + "};";
+  }
 
-    public String Privacy()
-    {
-        string privacyText = @"{
+  public String Privacy(int id)
+  {
+    string privacyText = @"{
       ""PrivacyPolicy"": {
         ""LastUpdated"": ""2024-05-28"",
         ""Introduction"": {
@@ -60,6 +90,6 @@ public class HomeController : Controller
       }
     }";
 
-        return privacyText;
-    }
+    return privacyText;
+  }
 }
